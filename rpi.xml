@@ -21,7 +21,7 @@
   
   <!-- base -->
   <project remote="yggdrasil31" revision="krogoth" name="BS_YOCTO-rpi-base" path="sources/base">
-	<copyfile dest="README" src="README"/>
+	<copyfile dest="README.md" src="README.md"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
