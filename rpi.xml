@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2" revision="krogoth"/>
+
+  <!-- locations -->
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>  
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="https://github.com/yggdrasil31" name="yggdrasil31"/>
+  <remote fetch="https://github.com/jumpnow" name="jumpnow"/>  
+
+  <!-- build system -->
+  <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded"/>
+  
+  <!-- yocto metas -->
+  <project remote="yocto" revision="krogoth" name="poky" path="sources/poky"/>
+  <project remote="qt5" revision="master" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="yocto" revision="master" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+  <project remote="jumpnow" revision="krogoth" name="meta-rpi" path="sources/meta-rpi"/>  
+  
+  <!-- base -->
+  <project remote="yggdrasil31" revision="krogoth" name="BS_YOCTO-rpi-base" path="sources/base">
+	<copyfile dest="README" src="README"/>
+	<copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+</manifest>
