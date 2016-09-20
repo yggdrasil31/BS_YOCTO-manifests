@@ -6,4 +6,5 @@ repo sync
 MACHINE=raspberrypi3 ./setup-environment rpi3b-build
 
 cd rpi3b-build
-bitbake
+
+bitbake <target>
